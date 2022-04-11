@@ -4,7 +4,7 @@ export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse
 ) {
-  if (req.headers.authorization !== process.env.NEXT_PUBLIC_STRAPI_SECRET) {
+  if (req.headers.Authorization !== process.env.NEXT_PUBLIC_STRAPI_SECRET) {
     return res.status(401).json({ message: "not authorized" });
   }
 
