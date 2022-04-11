@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { getLandingPage } from "./lib/strapi";
+import { getLandingPage } from "../lib/strapi";
 
 const Home = () => {
   useEffect(() => {}, []);
