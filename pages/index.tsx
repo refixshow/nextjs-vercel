@@ -4,7 +4,7 @@ import { getLandingPage } from "./lib/strapi";
 const Home = () => {
   useEffect(() => {}, []);
 
-  return <div></div>;
+  return <div className="bg-black text-purple-300">hue ha</div>;
 };
 
 export async function getStaticProps() {
