@@ -14,7 +14,7 @@ export const getLandingPage = async () => {
   try {
     return await strapi.find("landing-pages");
   } catch (err) {
-    console.error(err);
+    console.error("Error From landing-pages: ", err);
     return null;
   }
 };

@@ -1,8 +1,10 @@
 import { useEffect } from "react";
 import { getLandingPage } from "../lib/strapi";
 
-const Home = () => {
-  useEffect(() => {}, []);
+const Home = ({ cms }: { cms: object }) => {
+  useEffect(() => {
+    console.log(cms);
+  }, [cms]);
 
   return <div className="bg-black text-purple-300">hue ha</div>;
 };
