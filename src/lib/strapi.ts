@@ -12,7 +12,10 @@ const strapi = new Strapi({
 
 export const getLandingPage = async () => {
   try {
-    return await strapi.find("landing-pages");
+    return await strapi.findOne("landing-pages", 1, {
+      fields: ["*"],
+      populate: ["content", "img"],
+    });
   } catch (err) {
     console.error("Error From landing-pages: ", err);
     return null;
