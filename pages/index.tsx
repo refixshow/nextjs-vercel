@@ -510,7 +510,6 @@ export async function getStaticProps() {
 
   return {
     props: { cms },
-    revalidate: 60 * 60 * 24 * 7,
   };
 }
 
